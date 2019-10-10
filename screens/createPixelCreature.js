@@ -63,7 +63,6 @@ export default class CreatePixel extends Component {
                     />
                     <CellNavigation 
                         setCellFunc={this.setCell}
-                        ipAddress={this.props.ipAddress} 
                     />
                 </View>
             </View>
