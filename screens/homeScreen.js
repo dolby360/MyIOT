@@ -99,6 +99,8 @@ export default class HomeScreen extends Component {
     askHostToNavigate = async (nav) =>{
         let _state = '';
         let _screen = '';
+        // TODO: should be false.
+        let bypassServerConfirmation = true;
         switch (nav) {
             case this.buttonNavigate.createYourCreature:
                 _state = 'createCreature';
@@ -115,20 +117,24 @@ export default class HomeScreen extends Component {
 
 
         let navigateNextScreen = false;
-        await axios.post('http://' + this.state.fullIPAddress, {
-            state : _state
-          })
-          .then(function (response) {
-            if(response.data === "OK"){
-                navigateNextScreen = true;
-            }
-          }) 
-          .catch(function (error) {
-            alert(error);
-          });
-          if( true === navigateNextScreen ){
+        if(false === bypassServerConfirmation){
+            await axios.post('http://' + this.state.fullIPAddress, {
+                state : _state
+              })
+              .then(function (response) {
+                if(response.data === "OK"){
+                    navigateNextScreen = true;
+                }
+              }) 
+              .catch(function (error) {
+                alert(error);
+              });
+        }
+
+
+        if( true === navigateNextScreen || true === bypassServerConfirmation ){
             this.props.navigation.navigate(_screen,{ipAddress : this.state.fullIPAddress})
-          }
+        }
     }
 
     navigateNextScreen = (but) =>{
