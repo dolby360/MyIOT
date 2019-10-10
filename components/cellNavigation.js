@@ -13,6 +13,9 @@ const directions = {
 export default class CellNavigation extends Component {
     constructor(props) {
         super(props); 
+
+        this.expendMode = this.props.expendMode;
+
         this.state = {
             cell : { row : 0, col : 0}
         };
@@ -61,6 +64,7 @@ export default class CellNavigation extends Component {
         return(
             <View>
                 <Arrows
+                    expendMode={this.expendMode}
                     upFunction={this.upFunc}
                     leftFunction={this.leftFunc}
                     rightFunction={this.rightFunc}

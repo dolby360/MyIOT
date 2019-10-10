@@ -36,6 +36,7 @@ export default class ChooseCreature extends Component {
           <View style={styles.navigationContainer}>
             <CellNavigation
               setCellFunc={this.setCell}
+              expendMode={true}
             />
           </View>
         </View>
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
   },
   navigationContainer : {
     // backgroundColor :'blue', 
-    flex : 1,
+    flex : 1.5,
     alignItems : 'center',
     paddingBottom : 50
   }
