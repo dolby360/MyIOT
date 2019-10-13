@@ -65,6 +65,7 @@ export default class CellNavigation extends Component {
             <View>
                 <Arrows
                     expendMode={this.expendMode}
+                    ipAddress={this.props.ipAddress}
                     upFunction={this.upFunc}
                     leftFunction={this.leftFunc}
                     rightFunction={this.rightFunc}

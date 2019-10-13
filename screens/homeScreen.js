@@ -19,7 +19,7 @@ export default class HomeScreen extends Component {
         this.retrieveData();
         this.buttonNavigate = {
             createYourCreature  :   'createYourCreature',
-            chooseCreature      :   'chooseCreature', 
+            choosePicture      :   'choosePicture', 
         }
     }
 
@@ -100,15 +100,15 @@ export default class HomeScreen extends Component {
         let _state = '';
         let _screen = '';
         // TODO: should be false.
-        let bypassServerConfirmation = true;
+        let bypassServerConfirmation = false;
         switch (nav) {
             case this.buttonNavigate.createYourCreature:
                 _state = 'createCreature';
                 _screen = 'createPixel';
                 break;
-            case this.buttonNavigate.chooseCreature:
-                _state = 'chooseCreature';
-                _screen = 'chooseCreature';
+            case this.buttonNavigate.choosePicture:
+                _state = 'choosePicture';
+                _screen = 'choosePicture';
                 break;
         
             default:
@@ -150,14 +150,14 @@ export default class HomeScreen extends Component {
                         </Text>
                     </TouchableOpacity>
                 );
-            case this.buttonNavigate.chooseCreature:
+            case this.buttonNavigate.choosePicture:
                 return(
                     <TouchableOpacity style={styles.button} onPress={ () => {
-                        this.askHostToNavigate(this.buttonNavigate.chooseCreature);
+                        this.askHostToNavigate(this.buttonNavigate.choosePicture);
                         }
                     }>
                         <Text style={styles.buttonText}>
-                            Choose creature
+                            Choose picture
                         </Text>
                     </TouchableOpacity>
                 );
@@ -188,7 +188,7 @@ export default class HomeScreen extends Component {
                     <View style={{flex : 1}}>
                         <ClearScreen ipAddress={this.state.fullIPAddress}/>
                         {this.navigateNextScreen(this.buttonNavigate.createYourCreature)}
-                        {this.navigateNextScreen(this.buttonNavigate.chooseCreature)}
+                        {this.navigateNextScreen(this.buttonNavigate.choosePicture)}
                     </View>  
             </View>
         </ImageBackground>

@@ -4,7 +4,7 @@ import { createAppContainer } from 'react-navigation'
 
 import HomeScreen from './screens/homeScreen'
 import CreatePixel from './screens/createPixelCreature'
-import ChooseCreature from './screens/chooseCreature'
+import choosePicture from './screens/choosePicture'
 
 const AppNavigator = createStackNavigator({
   Home : {
@@ -16,8 +16,8 @@ const AppNavigator = createStackNavigator({
   createPixel :{ 
     screen : CreatePixel,
   },
-  chooseCreature :{ 
-    screen : ChooseCreature,
+  choosePicture :{ 
+    screen : choosePicture,
   },
 
 },{
