@@ -3,9 +3,9 @@
 
 ## screenshots
 
-![1](img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/1.jpeg?raw=true" width="414" height="736")
-![2](img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/2.jpeg?raw=true" width="414" height="736")
-![3](img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/3.jpeg?raw=true" width="414" height="736")
+<img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/1.jpeg?raw=true" width="414" height="736">
+<img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/2.jpeg?raw=true" width="414" height="736">
+<img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/3.jpeg?raw=true" width="414" height="736">
 
 
 The BOX:
