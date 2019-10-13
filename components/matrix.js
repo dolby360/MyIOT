@@ -34,7 +34,7 @@ export default class Matrix extends Component {
         return(
             <TouchableOpacity 
                 style={ this.state.buttonState[row][column] ? styles.squareTrue : styles.squareFalse } 
-                onPress={ () => this.onBoxClick({row,column})} 
+                onPress={ () => this.onBoxClick({row,column})}       
             />
         );
     }
