@@ -4,7 +4,7 @@
 ## screenshots
 ||||
 |--|--|--|
-|<img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/1.jpeg?raw=true" width="250" height="536">|<img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/2.jpeg?raw=true" width="250" height="536">|<img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/3.jpeg?raw=true" width="250" height="536">|
+|<img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/1.jpeg?raw=true" width="280" height="536">|<img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/2.jpeg?raw=true" width="280" height="536">|<img src="https://github.com/dolby360/MyIOT/blob/master/screenshots/3.jpeg?raw=true" width="280" height="536">|
 
 The BOX:
 ![The BOX](https://github.com/dolby360/Temperature-distance-screen-Arduino/blob/master/The%20BOX.jpeg?raw=true)
